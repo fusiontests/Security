@@ -1,0 +1,528 @@
+Keith Solie's Information Technology and Electronic Communications Security Guide (Research Document)
+Copyright (c) Keith Solie, 2024. 
+Free to Redistribute with Copyright Information. Modification Prohibited.
+Disclaimer: This document is provided AS IS, and is intended for research purposes only.
+Contact E-mail: ivymikew78@outlook.com
+Created and Authored by Keith Solie.
+------------------------------------------------------------------------------------------------------------
+
+Originally written in English and distributed as .txt using ANSI encoding for maximum compatibility.
+
+
+-------Begin Table Of Contents-------
+If you are reading this document digitally in it's original format,
+A suggestion is to use the Find tool in your text viewer/editor.
+In your find tool, enter #X, #X-Y, or #X-Y-Z where applicable, 
+replacing X, Y and Z with their respective numbers in the table.
+
+0-1 Author's Notes and Introduction
+1 Smartphones and Related Devices
+1-1 Using Multiple Phones
+1-2 Smartphone Exploits and Vulnerabilities
+2 Communication Security using Older Standards
+2-1 Expiry of Old Cell Phones and Connection Standards
+2-2 Satellite Phone Introduction
+2-3 Satellite Phone Information and Availability
+3 Linux Systems Information
+3-1 Linux and Malware
+3-2 Day Zero Exploits
+4 Malware Information and Malware Prevention
+4-1 Malware Size and Complexity
+4-1-1 Modern Operating Systems and Malware
+4-1-2 How Malware Tries to Evade Anti-Malware
+4-2 Windows and Rootkits
+4-3 Physical Attacks and Other Vulnerabilities
+5 Safe Storage Volume Rules
+5-1 Creating Formatted Partitions With Safe Storage Volume
+5-1-1 Erasing, Creating, and Formatting Partitions on Windows  
+5-1-2 Erasing, Creating, and Formatting Partitions on Linux
+5-2 Preserving Availability of Old Media for Compatibility Use
+5-2-1 Preserving Historic Computer Hardware and Software
+6 Durability, Longevity, and Safety of External Data Storage Media
+6-1 USB and Other Flash Media
+6-2 Compact Disc (CD) and Optical Media
+6-2-1 DVD Optical Media
+6-2-2 Optical Media Security, Advantages and Drawbacks
+6-3 Reliable External Data Storage Media Suggestions
+7 Passwords
+7-1 Password Creation Tips and Tricks
+7-2 Two Factor Authentication (2FA) Suggestions
+7-3 Password Security and Creating a Secure Password
+7-4 LAMBDA: A Useful Acronym for Help with Password Creation 
+8 Enhanced Security using Classic Offline Methods, Ciphers, and Cryptography.
+8-1 Language Ciphers and Potential Vulnerability from Artificial Intelligence (AI)
+9 How to Control Serious Malware Infections on Personal Computers
+9-1 Attempting Cautious File Recovery
+9-2 Malware Cleanup and Clearing of Data Drives
+10 Extra Miscellaneous Advice
+0-2 Final Notes
+
+-------End Table Of Contents-------
+
+
+
+
+
+#0-1. Author's Notes and Introduction: 
+Below is a numbered list of sections that contain categorized information and security ideas. 
+Some of the sections' information provides context for ideas in other sections. 
+I recommend reading the entire document for a complete understanding of the information and ideas presented.
+This document is intended to be informal in it's presentation.
+It does not discredit any information or ideas written. 
+The intention is to enlighten your own thinking and opinions.
+Contained here are my secure communication ideas and methods. They are likely not all exclusive or unique.
+This document started as my own compilation of useful information intended for personal use. 
+All of the information contained here comes from my own personal experience.
+That means, it includes my opinions and things I believe to be useful or of interest.
+It evolved into something I consider important to make public for research purposes.
+The intended audience for this document is: Anyone interested in security.
+I hope all who read this find it useful, or at least learn something from it. 
+This information is welcome to all developers, individuals, groups, governments, and businesses.
+I request you use this in good faith. 
+Please give due credit to myself if you wish to use this document as a reference.
+
+
+Begin.
+
+
+#1. Smartphones and Related Devices
+Use a regular smartphone as a tool, but eliminate all the stuff you don't use. Avoid usage of the cloud.
+Acceptable usage of the cloud: 
+- only use it for data that isn't sensitive, which is not a privacy concern.
+- Some sensitive data probably isn't as sensitive as you think, basically just a honeypot having it there.
+- Most would be afraid to touch or mess with it. A temptation that would likely lead to them being busted.*
+*- I would not recommend testing this though, as it is dangerous. 
+Honestly the smartphones and related devices are fun and convenient. 
+They are excellent tools, but don't have any expectations regarding true security with them.
+
+#1-1. Using Multiple Phones
+It's probably a good idea to actually have more than one smartphone if you want to use them. 
+One for personal stuff, one or more for business, utility, privacy, greater security, or any combination of 
+those. In addition, you might also want a Satellite phone for their great utility and enhanced security.
+It may be a good idea to have a satellite phone at home, in the car, on your person,
+or in some sort of secure location as a backup for if you're in a remote location or somehow cellular fails.
+It's important to note that Satellite phones are usually expensive. Maintaining their useability, service,
+and connection to their respective satellite networks is also expensive. More information on satellite 
+phones, old non-smart cell phones, and other old school electronic communication methods in Section #2.
+
+#1-2. Smartphone Exploits and Vulnerabilities
+I know of some pretty nasty advanced exploits that exist or have existed on smartphones and related devices.
+I don't really have a clue as to how one would perform them. I am going to leave such speculation out of 
+this, because that's a big rabbit hole of it's own. I am pretty sure that once you end up with one of those
+on your device, they add their code into every app they can. Makes it a real challenge to stop and clear it.
+Might possibly be impossible? This is a thing with Apple devices anyways. The deal with Apple devices is, 
+they're super secure by default. The app store is well managed. The problem is advanced exploits that hide. 
+It's always those rootkits. So somehow if someone gets an exploit on there, it's all over.
+Realistically it may be impossible for an individual to get rid of a rootkit on an Apple device. 
+Maybe the folks at the genius bar can help, though who would know but them? 
+The thing is, I jokingly called the iPhone a spyPhone for a reason.
+If anyone did pull that crap, then Apple starts spying, and they see it! For good reasons, to try fixing
+the problem and to hold the attacker(s) responsible.
+It's the opposite situation with an android. The main vulnerability is installing 3rd party untrusted apps.
+You can get malware from an app. It's not uncommon. There is some hope for you if this happens though.
+With the last android I owned, you could wipe the entire kernel and start fresh. 
+Completely fresh like the factory just finished loading it brand new. This was able to be
+performed all independently. With that thought, android might be a better choice if you're 
+very tech savvy or like to do repairs and fixes on your own. 
+I am not sure if this is dependent on the android device or not, 
+or if it's entirely valid and currently relevant information for most or all androids.
+I really don't have many modern smartphones to test this on, or malware samples to try removing.
+Based on that, I guess you may be able to tell I don't have the resources to do in depth testing/research.
+And there's always those day-zero exploits. That's discussed in Section #3.
+
+#2. Communication Security using Older Standards
+- For advanced security, use a custom language, cipher or form of cryptography to obscure your stored data.
+- This can apply to most communication, but it's something that requires more care. 
+- An old school phone would seem like a good idea. Aren't those difficult to hack? You can't install apps!
+Well, there's a problem with that idea now! If necessary, think satellite phone instead.
+
+#2-1. Expiry of Old Cell Phones and Connection Standards 
+Old cell phones are useless in some places, such as the United States and Canada. 
+It's not a reliable option. At this time old 2G and 3G standards will likely disappear globally, making the 
+old cell phone thing irrelevant. This leads us to the satellite phone.
+If you actually need secure communication that avoids cell networks in US and Canada, 
+the only option for wireless, global range is a satellite phone. Much more costly but probably worth it.
+ 
+#2-2. Satellite Phone Introduction 
+Satellite phones have many advantages and utilities, and owning one is a good idea 
+if you travel to/live in remote areas. Or if you can't rely on cell towers and routing for whatever reason. 
+Based on my limited research, services such as Globalstar have solid global coverage and for example offer
+global service for $1080/yr offering 900 minutes and SMS messages. Do your own research and find the best
+device and service provider for your needs. Costs may vary depending on your region and selected provider.
+
+#2-3. Satellite Phone Information and Availability
+An interesting note is if a country or area prohibits you from bringing or keeping a satellite phone, 
+it's probably not a safe place or a place you want to be. Seeing as satellite phones connect directly to 
+an independent satellite network, it makes hacking or surveliance through this communication difficult. 
+This doesn't give freedom to violate laws or discuss doing so in the place you operate one of these devices.
+However, any government that seeks to restrict or prohibit satellite phones likely wants full control for 
+malicious purpose. Or, they seek to restrict citizens' and visitors' communications for 
+similar malicious purpose. I think this may be a better indicator of a region's safety and authoritarianism 
+than what any publicly available media suggests. 
+Ask the question: Can you bring and operate your own satellite phone? Yes or No? Yes means probably safe.
+May not be a perfect indicator but likely an actual solid reference.
+
+#3. Linux Systems Information
+Linux is good but be sure of what distribution you run. Nice thing is most old and simple popular
+windows and DOS apps will run on it. Most programs and code on linux are open source, so if you want to be 
+sure compile yourself. Or check md5 signatures at the least. 
+*Also if it's teeny tiny it probably isnt malware.
+
+#3-1. Linux and Malware 
+Many people think that Linux is immune to malware. I wouldn't count on it! They always get you when
+you let your guard down. A good example of malicious attacks that catch you off guard
+are frequently known as day-zero exploits. Let's continue and discuss what day-zero exploits are.
+
+#3-2. Day Zero Exploits 
+Day zero exploits are basically hidden exploits that individuals or groups are witholding for special
+purpose or attacks. They can vary in their capability, danger, and ease of resolution. The term day zero
+exploit is a reference to the nature of some of the vulnerabilities, being ones that are patched or fixed
+on the "day zero", or first day/hours of which they are used. This makes timing and execution of 
+these exploits and related attacks critical to avoid a waste or failure. This is because security 
+specialists often treat these problems with utmost importance and fix them as soon as possible. 
+Typically, high value targets are the victims of such attacks and exploits, 
+given the value and capabilities associated with many day zero exploits. Also because they're usually
+only good for a short period of time, hackers have to choose their targets wisely with these exploits.
+
+#4. Malware Information and Malware Prevention
+I don't believe there's much tiny malicious code that can evade anti virus detection at this point. 
+Not these days with modern operating systems and software/hardware. I would not count on it though. 
+If I had to guess the max truly safe file size, it would probably be around 64MB. Generously, 128MB.
+In my opinion that's totally safe on anything with security updates and antimalware from 2020 or newer. 
+I haven't done complete research myself. So I am not exactly sure about this. I think flash media with
+a small available formatted capacity is probably the best way to transfer files. It is too difficult 
+to hide malware on there without it being noticed. So personally I think the max you would want to use 
+in that case is 256MB. 512MB and larger, malware might be able to hide itself or
+something in there but it would be noticeable if you knew what to look out for. Examples are 
+suspiciously small available space, unusually large file size, and invalid file signatures that don't match.
+
+#4-1. Malware Size Increases
+Malicious code is often following a trend of increased data consumption and file size. To put it simply,
+Anti-virus and Anti-malware software is very good at it's job. The software is always continuing to improve.
+This makes it harder for malware to hide itself in a file system or in a computer's memory. 
+The only straightforward way for it to hide is to obscure it's code, function, and identity.
+More information on why this is the case below.
+
+#4-1-1. Malware's Increasing Complexity and Objectives
+Increased complexity of operating systems require malware's code to be more intricate in order to meet
+it's objectives. These goals that malware tries to achieve are things such as:
+surveilance, data destruction, data encryption, data transfer, operating system damage, 
+system inoperability, control over system functions, modification of data, control of drivers, 
+damage to hardware, creating copies or backups of itself, hiding its own presence, 
+performing hidden communications, infecting files, and infecting other devices.
+This can cause larger file size for malware, especially with the more included functionality it posesses.
+
+#4-1-2. How Malware Evades Detection
+Advancements in anti-malware technology make malicious code easier to detect. This requires creators 
+and distributors of malware to find ways to hide it's presence and evade detection. 
+The easiest way for malware to sneak on a device with minimum file size is to do one thing: 
+download the program that does the real work. 
+Obviously this would require a device with networking capabilities. Another thing to note is, this is a
+common type of program that anti-malware software and firewalls are designed to detect, prevent, and stop.
+In order to evade detection, most malware requires an increase in file size. 
+Examples of how malware hides it's presence:
+- Adding garbage code, or useless functions, to the malware's functional programming. Increases file size.
+- Encryption. The encryption used is often complex and extensive, resulting in much larger file size than
+necessary for the malware's actual working code. As a result of this, a majority of most malware's storage
+consumption is from the complex and extensive encryption needed to hide from anti-malware software.
+
+#4-2. Windows and Rootkits 
+I think the smallest rootkit that can effectively get windows 7 and up is around 200MB. However this 
+is only true if that version of windows is fully up to date with all the security patches, and an effective
+quality anti-virus software and firewall exists. I would not recommend using windows 8 or 8.1 at all. 
+Anything older than windows 7 is not safe, and should not be connected to the internet. 
+Even connecting windows 7 to the internet at this point is very ill advise. 
+If we're going based off rootkit prevention, and these conditions are met, any data storage under 200MB 
+is almost 100% a safe choice. I would argue personally if you knew your stuff anything 2GB or less is 
+acceptable, provided you watch the file system carefully on those. Some good rules being no unsigned, 
+unchecked or unverified files greater than 150MB. Verifying md5 hash is always a good idea.
+If you're careful about what files you store on that media, I believe it's really hard for a rootkit to 
+hide on media of that size. Obviously the smaller the better, the closer to 200MB or less the safer.
+
+#4-3. Physical Attacks and Other Vulnerabilities 
+An important suggestion is to keep all of your USB ports and forms of physical file transfer secure.
+One of the most common ways hackers get in is by using an infected data drive of their own to physically
+sneak malware on your device. Avoid short-range file transfer through technology such as bluetooth.
+Always disable these capabilities if possible, or even better lock them behind physical or password 
+verification. Never set your computer or device to automatically execute, play, or open media from an
+external data source. If this behaviour exists, disable it if possible. The only exception is verified
+secure bootable media. Always use a secure password or PIN on your devices, and lock the device when you
+are away or not watching your device.
+
+#5. Safe Storage Volume Rules
+In newer computers, the ability to store and hide malware lies in storage capacity of the partition(s).
+Greater formatted storage volume means:
+- Can contain more advanced/capable malware.*
+- Easier to hide malware or large malware because it's not usually taking up needed space. Less noticed.*
+*This applies to ALL formatted, useable computer data storage.
+Expanding on what was mentioned before, in todays age with more modern computers:
+LESS than or EQUAL to 64MB is TOTALLY SAFE
+LESS than or EQUAL to 200MB is MOSTLY SAFE
+GREATER than 200MB is ACCEPTABLE, BUT POSSIBLY UNSAFE. MONITOR AVAILABLE CAPACITY CLOSELY.
+GREATER than 2GB becomes DIFFICULT TO MONITOR.
+Anything with greater formatted capacity than a dual-layer DVD (around 8.5GB), REQUIRES EXTREME CAUTION.
+
+#5-1. Creating Formatted Partitions With Safe Storage Volume
+If you have spare external data drives, it's a good idea to use a safe file system for valuable
+documents and for secure file transfer. This means to unallocate any large volume partitions, and 
+create small partitions with a desired safe storage volume indicated previously.
+The number of small partitions you create will depend on your needs and the computer file systems' ability.
+Below are instructions for re-allocating memory and partitioning a larger capacity data drive.
+
+#5-1-1. Erasing, Creating, and Formatting Partitions on Windows
+On Windows, use "diskmgmt.msc". Re-format the drive to use the file system you need.
+Generally, FAT32 is most compatible, but restrictive. exFAT and NTFS are more capable.
+Warning: This will erase everything on the data drive.
+An easy method I use to create a single partition with the restricted data capacity is:
+Right click on the data drive in the bottom panel and select the option "Shrink Volume..."
+Enter your desired available data capacity in the area labeled
+"Enter the amount of space to shrink in MB:" and click Shrink
+Right click on that new unallocated partition and select the option "New Simple Volume..."
+Click "Next" and continue until you see the "Specify Volume Size" interface. 
+Leave the "Simple volume size in MB:" area at the default full amount. Click "Next".
+You may assign the available drive letter of your choice. Select your desired formatting settings
+and proceed by clicking "Next". If this is all you wanted to do, right click the remaining
+large partition or empty space and select the option "Shrink Volume..." again.
+This time, enter the maximum available capacity in the area labelled
+"Enter the amount of space to shrink in MB:" and click Shrink.
+Now you have only the restricted capacity you created on your data drive available for use.
+The extra space is unallocated and unusable unless formatted into one or more additional partitions.
+If you have repeated this job to create multiple small partitions, you may run out of drive letters. 
+In that situation, if available, proceed using the option to mount in a selected empty folder.
+
+#5-1-2. Erasing, Creating, and Formatting Partitions on Linux 
+If you are using Linux, find the respective disk utility, select your desired data drive,
+delete existing partitions if they're unsuitable, and create a new partition of your desired size.
+Linux distributions can vary in how this job is performed, which is why these instructions are general.
+Personally I have found it easier and less confusing to do this job on some Linux distributions.
+
+!#5-2. Preserving Availability of Old Media for Compatibility Use
+I ask that people use the steps in 5-1-x to create these safe partitions. Please do not
+buy old low capacity media. This media is getting harder to find and necessary for old hardware and systems.
+It is not necessary for newer hardware, software, and operating systems. For respect of those
+that still require or use old computers, do not hoard or buy this old media.
+The only exception is if you're using, or need to use, one of these pieces of history.
+I wish to retain it's availability for those who need it for whatever necessary purpose.
+New data storage media is totally incompatible and non-functional on these outdated systems.
+In some cases, these old computers and systems are all that's available for the users. 
+Some reasons might include cost, availability, and necessary compatibility for old exclusive programs.
+In addition, they are excellent examples of our information technology and computer history.
+They can also provide great opportunities for learning, even in the modern age of computing devices.
+
+!#5-2-1. Preserving Historic Computer Hardware and Software
+Please DO NOT destroy any of this old media or hardware. Or copies of software.
+Ask yourself if people 1000 years ago would appreciate you destroying part of their history?
+Would you appreciate the destruction of something that represents your hard work and efforts?
+Some day people will look back on the early days of computers. 
+That's going to be ancient history eventually. A curiosity for those who weren't present
+to experience it. Some may not see it yet. But think about something from history you were
+able to witness, that provoked curiosity and brought a new perspective. I am sure you would
+be upset if it were to dissapear somehow. 
+
+#6. Durability, Longevity, and Safety of Data Storage Media
+This section is about external data storage media, includng the various advantages and 
+drawbacks to different commonly available types. The main focus is security and longevity.
+Ease of use and functionality are also mentioned.
+
+#6-1. USB and Other Flash Media
+I know that USB flash drives can be killed if plugged into the wrong thing. 
+I am pretty sure that regular full size SD cards are unkillable, unless you physically destroy them. 
+I just can't think of any SD card reader that can actually damage one with a voltage/current. 
+Unless you plugged it into some random unknown reader which I would never do. 
+Always use your own external reader or one built into a legitimate PC? 
+They may have some kind of regulation on them that switches them off if the wrong
+power is applied but I would have to do more research on that. I know most USB flash drives just trust
+that the USB controller they're plugged into is legitimate. I have even had normal USB ports kill
+those before, I think it was an old not so great USB 2.0 flash drive into a USB 3.0 port, that's the 
+memorable one. Oh it's happened twice I think. I don't know. One time it actually killed those USB ports
+as well.
+
+#6-2. Compact Disc (CD) and Optical Media
+Compact Disc (CD) are an option for secure data storage. CD-R is the best if you don't want them to be
+modified after burning, and CD-RW if you want to rewrite to them. The max capacity is around 700-870MB. This
+makes it pretty hard to hide serious malware for newer systems. The disadvantage here is not many computers
+at this time are being manufactured with optical disc drives. There's one advantage to this, which is
+malware that targets burning/writing to optical media is becoming or has become less popular.
+
+#6-2-1. DVD Optical Media
+DVD is also a great choice where you require larger volumes of data to be stored. The standards are:
+- 4.7GB (single-sided, single-layer – common), 8.5GB (single-sided, double-layer), 
+- 9.4GB (double-sided, single-layer), 17.08GB (double-sided, double-layer). - CD: 700-870MB.
+Again, the storage capacity safety rule (Section #5) still applies here.  
+
+#6-2-2. Optical Media Security, Advantages and Drawbacks
+Optical discs last a long time unless you physically damage them, especially if it's write once/read 
+only. The only problem is the actual disc drives are the weak point. Maybe this doesn't apply as much to
+the really high end expensive ones? I have never tested or researched that. Security can be questionable 
+with some optical discs. Depending on how data is written or it's formatted, or the type of optical disc.
+Optical discs with greater storage volume have greater risks, as Section #5 always applies.
+I know that a disc drive has to deliberately burn the information onto the disc. Makes it much harder
+for a computer to stealth read/write to and from the disc. Always impossible without the drive spooling
+up and doing it's thing. I guess the only way for malware to get on those is if:
+- it's already contained in the files you're burning
+- whatever you're using to burn to the disc is hacked
+- you don't pay attention, leave a read/write disc in the drive, and malware decides it has the
+courage to try and write to it or read from it anyways.
+- some kind of real spooky one where it sneaks the malware into the burning process with regular files.
+Order of risk, with the highest risk variants always being read/write, write once being lowest risk.
+Greatest risk to least risk: Blu-ray > High Capacity DVD > DVD > CD > CD ROM.
+
+#6-3. Reliable External Data Storage Media Suggestions
+My personal recommendations are the standard full-size SD card and the CD-R or CD-RW. 
+Number one is standard full-size SD cards. They're small, easy to carry,
+durable, can fit in a wallet, a phone case, or just about anywhere. They also have variable storage capacity 
+that can be easily partitioned into safe formatted volumes of your choice. Can be set read/write or read only.
+Number two is the CD-R (write once) or CD-RW (re-writable). Affordable and ideal for long term storage.
+As long as Section #5 is followed, there's not much to worry about regarding CD-R or CD-RW security. 
+The exception is they can't be used if you don't have an optical drive. I would recommend
+purchasing or obtaining an external optical drive if you don't already have one. They are a great utility.
+
+#7. Passwords
+(Please don't use any of these example reference passwords for security reasons.)
+(Unless you wanted to experiment and see if hackers try and guess them by assuming someone will use them.)
+At this time because of Artificial Intelligence (AI), Ideally use a form of two factor authentication (2FA)  
+AND/OR A very complicated password. One that would be written down on paper. The only reason not to write
+it down is if you have total confidence in your memory and/or you don't want any paper copies existing
+for whatever reason, maybe a risk of theft or being lost. It's ill advise to store passwords electronically.
+FOR MAXIMUM SECURITY It should be:
+- As long as possible
+- Use as many different characters as possible
+- Avoid using any common words or phrases, especially common phrases.
+
+#7-1. Password Creation Tips and Tricks
+I think repeating STRINGS (words/characters/numbers) might be a good trick. Only if it's mixed with a 
+lot of randomness or variable content. If I was an AI designed to guess passwords, I sure wouldn't think 
+someone would use something like "DuckDUCKduckLUCKluckLuck" in their password sequentially like that. Not 
+usually how a human would make a password, at least not a normal one. The idea here is repeated STRINGS.
+A good thing to note is most artificial intelligence designed to guess passwords, follows 
+what "normal human" passwords look like. A simple trick could be writing your password like a crazy person. 
+Artificial Intelligence generally are not designed to follow any unusual password creation techniques.
+If they wanted to add this ability, it could be much slower and less effective at cracking the easy ones.
+If they make a password guessing AI too complicated it becomes only slightly better than an old bruteforce.
+Actually, if you create your passwords with the intention of evading password guessing AI, 
+that AI may be even less effective than old school bruteforce, which is just guessing all possible
+strings of characters - Character by character, string by string. This is why long passwords will always
+be superior. It takes much longer to guess every possible combination in a 16 character string, 
+compared to the time it takes to guess an 8 character string.
+
+#7-2. Two Factor Authentication (2FA) Suggestions 
+For two factor authentication (2FA), if it's going to use a phone number, this is where a more secure 
+phone can be important. Use any phone without extra apps and minimal built in features/apps. 
+Or use a satellite phone! Recieve that code or verification through SMS or Phone on one of those devices, 
+so it can't be read by infiltrating spyware or malware. 
+
+#7-3. Password Security and Creating a Secure Password
+The primary rule to passwords is to have something UNIQUE. 
+There's no rule against using similar passwords. Be careful though, using similar passwords carry great risk 
+if done improperly. If your two passwords are something like "ScoobyDoo1" and "ScoobyDoo2", that's no good. 
+If you happen to be a target, any accounts associated with you that use similar passwords will be easy to 
+break into if one of those passwords are found. Say those were your passwords, if you wanted them to remain 
+similar and be more secure, you could try something like: "scoobydooLOVESyou2" and "SCOOBYDOOlikesME1", 
+just for an easy example. If you are going to use similar passwords, I advise only using them 
+for things of lesser security concern.  And make those similar passwords fundamentally different enough so 
+that one password can't be guessed easily from another. Anything you want maximum security for should have a 
+unique password. An alternate and effective strategy is to use a totally random string and write it down 
+in case you can't remember. Example: "2F!a9*3X)L0l&Z82@bbEy;g42o6^i5"
+
+#7-4. LAMBDA: A Useful Acronym for Help with Password Creation 
+An acronym for strong passwords: LAMBDA! (like the symbol in Half-Life, from the Greek alphabet.)
+The first letters are the most important descending to the least important.
+L : Long (Many characters)
+A : Amusing (Optional, but it's usually easier to remember an amusing password)
+M : Memorable (Very good idea for it to be memorable)
+B : Bizzare (Unusual, difficult for someone/something to guess)
+D : Distorted (Obscured - gramatically incorrect, random use of capitals, numbers in place of letters, etc)
+A : Absurd (Maybe try to think like a crazy person)
+Reference example that follows all of LAMBDA: "LuckYLUCKYducks!D0NTcHUCk@TheZ002?"
+
+#8. Enhanced Security using Classic Offline Methods, Ciphers, and Cryptography.
+Offline cryptography, ciphers! Make sure all the people you know, are in the know! That they understand. 
+The only problem is there's the human leak problem. If the wrong person knows your language/cipher, 
+you're toast! But at least it's far more difficult to have that leak into the wrong hands. 
+And what capable person is going to spend that much effort trying to decrypt your custom cipher or language?
+They would have to be very determined. Probably more so than a computer hacker I would think. 
+As long as you avoid using it on the internet or having it leak onto the internet, 
+it's unlikely an Artificial Intelligence (AI) could try at breaking the cipher and 
+guess what you're really saying or trying to encrypt.
+
+#8-1. Language Ciphers and Potential Vulnerability from Artificial Intelligence (AI)
+I mention Artificial Intelligence (AI) because many of them are learning or are being developed to 
+follow language patterns. Since a language cipher usually follows some sort of grammar structure and 
+bears similarity to human language, it's possible for an Artificial Intelligence (AI) to make potentially 
+accurate guesses on what's being said if it has enough input to process. 
+I am not going to provide any examples or instruction on how to develop your own ciphers or 
+cryptography, example information can be found elsewhere. This kind of thing is more personal and exclusive 
+to the person(s) who create and use it. There's many ways you can go about it, some are simple and easy to 
+remember. Other methods and techniques are more complicated. 
+And within that there's varying levels of cipher or encryption strength.
+Some are difficult to decipher, others are easy. 
+It's strength can also depend on the individual(s) or machine trying to break it.
+
+#9. How to Control Serious Malware Infections on Personal Computers
+If your device has been hacked, and you think there's a rootkit or deep rooted "invisible" malware.
+Find out if it's possible to do some kind of rom firmware exploit with it's CPU(s) or Microprocessor(s)
+Condition (1)- If no, Throw out all the data drives, Disconnect the RAM, Etc.
+Condition (2)- If yes, Throw it in a volcano! Replace it! DO NOT connect or load any files from
+any external data drives/memory previously used on that device if they have a large usable storage volume, 
+as mentioned in Section #5.
+
+#9-1. Attempting Cautious File Recovery
+If you desperately need specific files from that storage, test and check on a 
+completely offline only device. Make sure that device is never connected to the internet, 
+and doesn't hold anything of value or any sensitive information.
+Keep in mind that the device you decide to do this on, will never be safe in the case of Condition 2. 
+UNLESS you use a different operating system! This is why you should have a Linux PC. 
+Windows rootkits are useless on Linux and same goes the other way around. I still think the possibility
+exists that some extreme hacker may have bundled rootkits for different operating systems together.
+So be careful.
+In any case, all data drives connected during the duration of the infection that don't follow Section #5 
+safe max partition rules should be wiped for security reasons, and discarded if desired. Anything that
+violates the specified maximum safe file size in Section #5 should be treated as probably malicious. 
+The only realistic exception is if you can completely verify the file's signature and integrity. 
+The safest option is to always wipe and discard these regardless. Always follow the safe storage volume rule 
+in Section #5 if you need to transfer important files.
+
+#9-2. Malware Cleanup and Clearing of Data Drives
+It is possible with the right tools that you may be able to completely wipe/erase a data drive that 
+contains serious malware such as a rootkit. After this it may be safe to re-use, 
+however you will lose any and all data on that drive that couldn't be safely backed up or transfered. 
+I would only recommend this if you have adequate information security experience and abilities.
+The only 100% safe option is to wipe, destroy, and discard the infected data drive(s) containing malware. 
+
+#10. Extra Miscellaneous Advice
+Good luck. Keep learning. Stay safe. Be smart. 
+And don't be afraid to take a break from this shit for your own sanity.
+Power off exists for a good reason. And if it won't shut off, hold the power button down until it does.
+
+
+Fin.
+
+
+#0-2. Final Notes 
+Truthfully, I do not have access to or possess every required resource needed to test and verify
+all of the information and ideas presented in this document. 
+Everything in this text is drawn from my own personal experience and thinking, with some verified by 
+limited research from various sources easily acessible on public internet. 
+I did my best to verify as much as possible from my own testing with 
+the limited number of devices I own and have access to.
+My recommendation is to do your own independent research if you have any doubts or questions regarding
+the information and ideas within this document. 
+I gave my best efforts to format this .txt document in it's best presentable form, however
+using raw .txt holds many limitations regarding standards for professional document formatting.
+I chose this format to provide maximum accessibility, compatibility, and ease of transfer across
+as many devices as possible. Personally, for this document I favor these qualities over stylistic ones.
+
+Thank you for reading. 
+Below are some quotes of mine. My wish is for them to inspire some positive reinforcement. 
+
+
+
+"Strength Through Great Faith."
+"Try To Be Optimist. Try Your Best. Be Educated. Know Your History. Practice Welfare For Others."
+"Paranoia does not grant you peace of mind. It is only earned through progress."
+"Safe Healing."
+- Keith Solie.
+
+
+
+

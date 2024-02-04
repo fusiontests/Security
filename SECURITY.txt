@@ -346,7 +346,7 @@ malware that targets burning/writing to optical media is becoming or has become 
 
 #6-2-1. DVD Optical Media
 DVD is also a great choice where you require larger volumes of data to be stored. The standards are:
-- 4.7GB (single-sided, single-layer – common), 8.5GB (single-sided, double-layer), 
+- 4.7GB (single-sided, single-layer Â– common), 8.5GB (single-sided, double-layer), 
 - 9.4GB (double-sided, single-layer), 17.08GB (double-sided, double-layer). - CD: 700-870MB.
 Again, the storage capacity safety rule (Section #5) still applies here.  
 

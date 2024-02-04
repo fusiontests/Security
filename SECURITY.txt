@@ -7,6 +7,9 @@ Created and Authored by Keith Solie.
 ------------------------------------------------------------------------------------------------------------
 
 Originally written in English and distributed as .txt using ANSI encoding for maximum compatibility.
+Published on: February 4th 2024.
+Last Modified: February 4th 2024.
+Source: 
 
 
 -------Begin Table Of Contents-------

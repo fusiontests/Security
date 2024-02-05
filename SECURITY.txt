@@ -169,7 +169,7 @@ May not be a perfect indicator but likely an actual solid reference.
 Linux is good but be sure of what distribution you run. Nice thing is most old and simple popular
 windows and DOS apps will run on it. Most programs and code on Linux are open source, so if you want to be 
 sure, compile yourself. Or check md5 signatures at the least. 
-*Also, if it's teeny tiny it probably isn?t malware.
+*Also, if it's teeny tiny it probably isn't malware.
 
 #3-1. Linux and Malware 
 Many people think that Linux is immune to malware. I wouldn't count on it! They always get you when
@@ -258,7 +258,7 @@ Greater formatted storage volume means:
 - Can contain more advanced/capable malware. *
 - Easier to hide malware or large malware because it's not usually taking up needed space. Less noticed. *
 *This only applies to formatted, useable computer data storage.
-Expanding on what was mentioned before, in today?s age with more modern computers:
+Expanding on what was mentioned before, in today's age with more modern computers:
 LESS than or EQUAL to 64MB is TOTALLY SAFE
 LESS than or EQUAL to 200MB is MOSTLY SAFE
 GREATER than 200MB is ACCEPTABLE, BUT POSSIBLY UNSAFE. MONITOR AVAILABLE CAPACITY CLOSELY.
